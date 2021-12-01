@@ -7,10 +7,10 @@ const Navbar = () => {
       <ul>
         <li className={styles.title}>myMoney</li>
         <li>
-          <Link to='/login'>Login</Link>
+          <Link to='/login'>Sign in</Link>
         </li>
         <li>
-          <Link to='/signup'>Signup</Link>
+          <Link to='/signup'>Create account</Link>
         </li>
       </ul>
     </nav>

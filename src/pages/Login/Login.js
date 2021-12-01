@@ -12,7 +12,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles['login-form']}>
-      <h2>Login</h2>
+      <h2>Sign in</h2>
       <label>
         <span>email:</span>
         <input
@@ -33,7 +33,7 @@ const Login = () => {
         />
       </label>
 
-      <button className='btn'>Login</button>
+      <button className='btn'>Sign in</button>
     </form>
   );
 };

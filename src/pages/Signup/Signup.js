@@ -15,7 +15,7 @@ const Signup = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles['signup-form']}>
-      <h2>Signup</h2>
+      <h2>Create account</h2>
       <label>
         <span>email:</span>
         <input
@@ -46,7 +46,7 @@ const Signup = () => {
         />
       </label>
 
-      {!isPending && <button className='btn'>Signup</button>}
+      {!isPending && <button className='btn'>Create account</button>}
       {isPending && (
         <button className='btn' disabled>
           Loading
