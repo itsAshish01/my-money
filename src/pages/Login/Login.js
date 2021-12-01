@@ -22,6 +22,7 @@ const Login = () => {
           value={email}
         />
       </label>
+
       <label>
         <span>password:</span>
         <input
@@ -31,6 +32,7 @@ const Login = () => {
           value={password}
         />
       </label>
+
       <button className='btn'>Login</button>
     </form>
   );
