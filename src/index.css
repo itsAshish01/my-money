@@ -35,6 +35,10 @@ ul {
   color: #fff;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+}
+
 .error {
   color: #e30000;
   margin-top: 15px;
