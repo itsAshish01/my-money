@@ -1,6 +1,10 @@
+import { useFirestore } from '../../hooks/useFirestore';
 import styles from './Home.module.css';
 
 const TransactionList = ({ transactions }) => {
+  const { deleteDocument, response } = useFirestore('transactions');
+  console.log(response);
+
   return (
     <>
       <h3>Recent Transactions</h3>
@@ -9,6 +13,7 @@ const TransactionList = ({ transactions }) => {
           <li key={transaction.id}>
             <p className={styles.name}>{transaction.name}</p>
             <p className={styles.amount}>${transaction.amount}</p>
+            <button onClick={() => deleteDocument(transaction.id)}>x</button>
           </li>
         ))}
       </ul>
