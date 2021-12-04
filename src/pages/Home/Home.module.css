@@ -4,6 +4,7 @@
   max-width: 960px;
   margin: 60px auto;
 }
+
 .content {
   padding-right: 30px;
 }
@@ -53,6 +54,24 @@
 }
 .sidebar aside li {
   margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 60px;
+    padding: 20px;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .sidebar {
+    padding: 0;
+    grid-row: 1 / -1;
+  }
 }
 
 /* transactions */

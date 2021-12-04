@@ -25,3 +25,17 @@
   color: #333;
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+  }
+
+  .title {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+}
