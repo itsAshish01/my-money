@@ -34,6 +34,11 @@
     row-gap: 20px;
   }
 
+  .navbar button,
+  .navbar a {
+    margin: 0;
+  }
+
   .title {
     grid-column: 1/-1;
     margin: 0;

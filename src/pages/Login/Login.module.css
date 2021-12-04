@@ -17,3 +17,13 @@
   color: #555;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    margin-top: 10px;
+  }
+
+  .login-form input {
+    width: 95%;
+  }
+}
